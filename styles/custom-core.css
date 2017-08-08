@@ -1,0 +1,127 @@
+.tint-page-background .content {
+    background-color: rgba(90, 90, 90, .9);
+}
+/*
+body {
+    background-image: url(https://static1.squarespace.com/static/593196fc893fc02998d1a483/t/5931b269197aea45dc77a7b1/1496429161459/CEAM-Core_Essence-Pattern.jpg);
+}
+*/
+
+.Header--top {
+    border-bottom-width: thick;
+    border-bottom-color: #6BBBAE;
+    border-bottom-style: solid;
+}
+// Make Appointment //
+#fixedbutton {
+    position: fixed;
+    padding: 10px;
+    top: 200px;
+    right: -65px;
+    color: #54585a;
+    background-color: #40c1ac;
+    z-index: 4000;
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    font-weight: bold;
+}
+// Mobile Nav Bar //
+.tablet-breakpoint-mixin .nav .site-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+.nav-branding-show-site-title .nav-mobile-site-title-link {
+    color: #54585a;
+}
+.tablet-breakpoint-mixin .nav-mobile-menu-label path {
+    stroke: #54585a;
+    fill: #54585a;
+}
+// Button Stuff //
+.AcuButton {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+// Footer Text Color //
+footer {
+    color: #333;
+}
+footer a {
+    color: #222;
+    text-decoration: none;
+}
+/* social icons */
+
+#Core-SM-Icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.SM-Icon {
+    padding: 0 20px;
+    width: 35px;
+    opacity: .8;
+}
+.SM-Icon:hover {
+    opacity: 1;
+}
+/* New Temp */
+
+.Header--top {
+    background: none;
+}
+.Main {
+    background: rgba(255, 255, 255, .7);
+}
+.Footer {
+    background: rgba(90, 90, 90, .9);
+}
+.Main-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+}
+.Footer-middle {
+    display: none!important;
+}
+.tweak-footer-layout-columns .Footer-blocks--top {
+    padding-bottom: 0px;
+}
+footer {
+    border-top-width: thick;
+    border-top-color: #6BBBAE;
+    border-top-style: solid;
+}
+.Header-inner--top {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.Header--top {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    margin-top: -100px;
+    background-color: hsla(360, 100%, 100%, .95);
+}
+.Site-inner {
+    position: relative;
+    z-index: 1;
+    margin-top: 90px;
+}
+footer {
+    -webkit-box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.75);
+}
+/* Forms */
+
+.form-wrapper .field-list .description {
+    text-transform: none!important;
+}
