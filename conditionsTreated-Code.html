@@ -1,0 +1,58 @@
+<script type="text/javascript">
+      $(document).ready(function() {
+          $('.faqElement').click(function() {
+            var faqElement = $(this);
+            var question = faqElement.find('.faqQuestion');
+            var answer = faqElement.find('.faqAnswer');
+            if (!answer.hasClass('activeFaqAnswer')) {
+              $('.faqElement').removeClass('flipButton');
+              faqElement.addClass('flipButton');
+              $('.activeFaqAnswer').css('max-height', '');
+              $('.faqAnswer').removeClass('activeFaqAnswer');
+              answer.css('max-height', 'none');
+              answer.css('max-height', answer.height());
+              answer.addClass('activeFaqAnswer');
+            }
+        });
+      });
+  </script>
+
+<style>
+
+  /* Learn More Dropdown */
+
+  .flipButton:after {
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+  }
+  .faqQuestion {
+      cursor: pointer;
+      margin: 0;
+      opacity: 1;
+      transition: all 0.3s ease 0s;
+      background-color: #6BBBAE;
+      padding: 5px;
+      text-align: center;
+      color: white;
+  }
+  .faqQuestion:hover {
+      opacity: .6
+  }
+  .faqAnswer {
+      margin: 0;
+      max-height: 0;
+      overflow-y: hidden;
+      -webkit-transition: all .25s;
+      -moz-transition: all .25s;
+      transition: all .25s;
+      -webkit-transition-timing-function: ease-out;
+      -moz-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding-right: 2em;
+  }
+  .activeFaqAnswer {
+      margin-top: 1.5em;
+  }
+
+</style>
