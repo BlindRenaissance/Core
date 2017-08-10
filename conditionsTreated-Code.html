@@ -13,6 +13,10 @@
                 answer.css('max-height', answer.height());
                 answer.addClass('activeFaqAnswer');
             }
+            else {
+              $('.faqAnswer').removeClass('activeFaqAnswer');
+              answer.css('max-height', '0');
+            }
         });
     });
 </script>
